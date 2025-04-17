@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/vyazovmykola.github.io/coding-lingo.git/",
+  "homepage": "https://vyazovmykola.github.io/coding-lingo/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
