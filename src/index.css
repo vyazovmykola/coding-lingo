@@ -1,0 +1,11 @@
+.WelcomeDiv p{
+    text-align: center;
+    margin-top: 60px;
+    color: hsl(113, 92%, 33%);
+    font-style: inherit;
+    font-size: 45px;
+
+}
+.WelcomeDiv{
+    background-color: black;
+}
