@@ -1,12 +1,13 @@
 import Welcome from "./Welcome.jsx";
 import Module from "./Module.jsx";
+import Test from "./Test.jsx";
 
 function App(){
 
     return(
         <>
         <Welcome/>
-        <Module/>
+        <Test></Test>
         </>
     );
 
