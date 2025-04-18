@@ -1,4 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./Test.css"
 import { Container } from 'react-bootstrap';
 import {
     DndContext,
@@ -58,11 +58,13 @@ function Test(){
         if(isCorrect){
             console.log("corect");
             updateColor()
+            alert("correct")
 
 
         }else{
             console.log("incorect");
             backColor()
+            alert("inccorect")
         }
     }
 
@@ -83,22 +85,24 @@ function Test(){
 
     return(
         <DndContext 
-            onDragEnd={handleDragEnd}
-        >
-            <Container className='p-3'style={{"width":"50%"}} align="center">
-                <h3  style={{backgroundColor:color}}>The Best Program Languages!</h3>
-                <SortableContext
-                    items={question.map(q => q.id)}
-                    strategy={verticalListSortingStrategy}
-                >
+            onDragEnd={handleDragEnd}> 
+            <div className="context">
+                <h3>Make correct position of items</h3>
+                <Container className='container'style={{"width":"50%"}} align="center">
+                    
+                    <SortableContext
+                        items={question.map(q => q.id)}
+                        strategy={verticalListSortingStrategy}
+                    >
 
-                    {/* components to sort */}
-                    {question.map(q => 
-                    <TestSortableItem key={q.id} name={q.name} id={q.id}/>)}
-                </SortableContext>
-                <button onClick={CheckAnswer}>Check</button>
-            </Container>
-            
+                        {/* components to sort */}
+                        {question.map(q => 
+                        <TestSortableItem key={q.id} name={q.name} id={q.id}/>)}
+                    </SortableContext>
+                    
+                </Container>
+                <button  className="button glass" onClick={CheckAnswer} style={{"vertical-align":"middle"}}>Check</button>
+            </div>
         </DndContext>
     );  
 

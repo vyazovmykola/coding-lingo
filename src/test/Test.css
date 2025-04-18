@@ -1,0 +1,94 @@
+.container{
+    margin-top: 20px;
+    margin-left: 25%;
+    border: 2px;
+    border-color: black;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    
+}
+.context{
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+.card{
+    background-color: white;
+    border-radius: 26px;
+    height: 50px;
+    border-color: black;
+    border: 5px;
+    border-style: outset;
+    text-align: center;
+    margin-top: 13px;
+    cursor: move;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.card:hover{
+    background-color: hsl(106, 100%, 47%);
+    border-color: hsla(0, 0%, 0%, 0.507);
+    border-style: outset; 
+}
+.card:active{
+    cursor: grab;
+    background-color: hsla(106, 100%, 50%, 0.767);
+    border-radius: 24px;
+    height: 45px;
+    border-color: hsl(0, 0%, 0%);
+    border: 3px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+body {
+	background: linear-gradient(-45deg, #000000, #33ff00 ,#000000,  #33ff00, #000000,  #33ff00, #000000);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: hsl(130, 91%, 54%);
+    border: none;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button:hover{
+    background-color: hsl(130, 91%, 34%);
+    font-size: 18px;
+}
+
+.Title{
+    background-color: #000000;
+    color: #ffffff3f;
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}

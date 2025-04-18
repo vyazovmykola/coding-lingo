@@ -1,6 +1,7 @@
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import  Card  from "react-bootstrap/Card";
+import "./Test.css"
 
 function TestSortableItem({id,name}){
     const {
@@ -17,7 +18,7 @@ function TestSortableItem({id,name}){
     }
     return(
         <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-            <Card body className="m-3">{name}</Card>
+            <Card body className="card glass" >{name}</Card>
             
         </div>
     );

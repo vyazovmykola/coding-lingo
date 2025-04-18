@@ -1,19 +1,14 @@
-.WelcomeDiv p{
-    text-align: center;
-    margin-top: 60px;
-    color: hsl(0, 0%, 0%);
-    font-style: inherit;
-    font-size: 45px;
-
-}
-.WelcomeDiv{
-    background-color: black;
-}
-.glass{
+body {
+    font-family: "Inter", system-ui;
+    line-height: 1.7;
+    color: var(--dark);
+    background: var(--light);
+    overflow-x: hidden;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border:1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+
+  }
