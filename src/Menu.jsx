@@ -1,10 +1,11 @@
+import React from "react";
 
-function Menu(){
-    return(
-        <>
-        <a href="/coding_lingo/App.jsx">send</a>
-        </>
+const Menu = () => {
+    return (
+        <div>
+            <h1>About Page</h1>
+        </div>
     );
-}
+};
 
-export default Menu
+export default Menu;
