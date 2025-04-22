@@ -12,7 +12,7 @@ export const SidebarData = [
     {
         title: "Rank",
         icon: <StarIcon />,
-        link: "/menu"
+        link: "/coding_lingo/Ranked"
     },
     {
         title: "Quiz",
